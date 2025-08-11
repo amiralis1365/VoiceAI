@@ -31,18 +31,21 @@ A React-based video conferencing application using LiveKit.
    livekit-server --dev
    ```
 
-6. **Run Agent**
+6. **Environment variables**
+   Copy `.env.example` file into `.env` file and update `OPENAI_API_KEY` with your own api key.
+
+7. **Run Agent**
    ```bash
    source venv/bin/activate
    python agent.py dev     
-   ```
+   ``` 
 
-7. **Start the development server:**
+8. **Start the development server:**
    ```bash
    npm run dev:all
    ``` 
 
-8. **Open your browser:**
+9. **Open your browser:**
    Navigate to `http://localhost:3000`
 
 ## Files
