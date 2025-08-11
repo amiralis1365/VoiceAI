@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   LiveKitRoom,
-  VideoConference,
+  AudioConference,
   ControlBar,
+  BarVisualizer,
   useTracks,
   useRoomContext,
 } from '@livekit/components-react';
@@ -42,8 +43,7 @@ function App() {
         console.log('Disconnected from LiveKit');
       }}
     >
-      <VideoConference />
-      <ControlBar />
+      <AudioConference />
     </LiveKitRoom>
   );
 }
