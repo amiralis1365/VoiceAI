@@ -9,41 +9,71 @@ A React-based video conferencing application using LiveKit.
    npm install
    ```
 
-2. **Create virtual env**
+2. **Create virtual environment:**
+
+   **macOS/Linux:**
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
 
-3. **Install python dependencies**
+   **Windows:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+3. **Install Python dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Install LiveKit**
+4. **Install LiveKit:**
+
+   **macOS:**
    ```bash
    brew update && brew install livekit
-
    ```
 
-5. **Run LiveKit Server**
+   **Linux:**
+   ```bash
+   curl -sSL https://get.livekit.io | bash
+   ```
+
+   **Windows:**
+   ```bash
+   # Download the latest release from GitHub
+   # Visit: https://github.com/livekit/livekit/releases/latest
+   # Download & Install
+   # Add the directory to your PATH or run from the download location
+   ```
+
+5. **Run LiveKit Server:**
    ```bash
    livekit-server --dev
    ```
 
-6. **Environment variables**
-   Copy `.env.example` file into `.env` file and update `OPENAI_API_KEY` with your own api key.
+6. **Environment variables:**
+   Copy `.env.example` file into `.env` file and update `OPENAI_API_KEY` with your own API key.
 
-7. **Run Agent**
+7. **Run Agent:**
+
+   **macOS/Linux:**
    ```bash
    source venv/bin/activate
-   python agent.py dev     
-   ``` 
+   python agent.py dev
+   ```
+
+   **Windows:**
+   ```bash
+   venv\Scripts\activate
+   python agent.py dev
+   ```
 
 8. **Start the development server:**
    ```bash
    npm run dev:all
-   ``` 
+   ```
 
 9. **Open your browser:**
    Navigate to `http://localhost:3000`
